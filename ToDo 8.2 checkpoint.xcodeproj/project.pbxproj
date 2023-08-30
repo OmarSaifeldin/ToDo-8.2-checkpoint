@@ -11,6 +11,7 @@
 		B1795F4A2A9F0CB400E6CB02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1795F492A9F0CB400E6CB02 /* ContentView.swift */; };
 		B1795F4C2A9F0CB600E6CB02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1795F4B2A9F0CB600E6CB02 /* Assets.xcassets */; };
 		B1795F4F2A9F0CB600E6CB02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1795F4E2A9F0CB600E6CB02 /* Preview Assets.xcassets */; };
+		B1795F562A9F0CCC00E6CB02 /* struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1795F552A9F0CCC00E6CB02 /* struct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B1795F492A9F0CB400E6CB02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B1795F4B2A9F0CB600E6CB02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1795F4E2A9F0CB600E6CB02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1795F552A9F0CCC00E6CB02 /* struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = struct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				B1795F472A9F0CB400E6CB02 /* ToDo_8_2_checkpointApp.swift */,
 				B1795F492A9F0CB400E6CB02 /* ContentView.swift */,
+				B1795F552A9F0CCC00E6CB02 /* struct.swift */,
 				B1795F4B2A9F0CB600E6CB02 /* Assets.xcassets */,
 				B1795F4D2A9F0CB600E6CB02 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1795F562A9F0CCC00E6CB02 /* struct.swift in Sources */,
 				B1795F4A2A9F0CB400E6CB02 /* ContentView.swift in Sources */,
 				B1795F482A9F0CB400E6CB02 /* ToDo_8_2_checkpointApp.swift in Sources */,
 			);

@@ -1,21 +1,33 @@
 //
 //  ContentView.swift
-//  ToDo 8.2 checkpoint
+//  ToDO
 //
-//  Created by Omar Saifeldin on 30/08/2023.
+//  Created by Omar Saifeldin on 07/08/2023.
 //
 
 import SwiftUI
-
 struct ContentView: View {
+    @State private var todos = [Todo(title: "Feed the cat", isCompleted: true),
+                                Todo(title: "Play with cat", subtitle: "Use his favourite String!"),
+                                Todo(title: "Get allergies"),
+                                Todo(title: "Run away from cat"),
+                                Todo(title: "Get a new cat")]
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            List($todos) { $todo in
+                HStack {
+                    Image(systemName: todo.isCompleted ? "checkmark.circle.fill" : "circle")
+                        .onTapGesture {
+                            todo.isCompleted.toggle()
+                        }
+                    VStack(alignment: .leading) {
+                        Text(todo.title)
+                            .strikethrough(todo.isCompleted)
+                    }
+                }
+            }
+            .navigationTitle("Todos")
         }
-        .padding()
     }
 }
 
@@ -24,3 +36,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
